@@ -1,0 +1,352 @@
+/* 1. RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #324950;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 2. HERO SECTION */
+.hero-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* замість center */
+    align-items: center;
+    text-align: center;
+    padding-top: 300px; /* відповідає макету */
+}
+.hero-wrapper {
+    width: 100%;
+    height: 850px;
+    background: url('koloski.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ШАПКА САЙТУ */
+.site-header {
+    width: 100%;
+    position: relative;
+    height: 113px;
+}
+
+/* ЛОГОТИП */
+.logo {
+    position: absolute;
+    width: 226px;
+    height: 113px;
+    top: 20px;     /* Top: 20px з макету */
+    left: 388px;   /* Left: 388px з макету */
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    mix-blend-mode: darken;
+}
+
+/* ПОШУК (Search) */
+.search-container {
+    position: absolute;
+    width: 350px;  /* Width: 350px */
+    height: 29px;  /* Height: 29px */
+    top: 20px;     /* Top: 20px */
+    left: 1165px;  /* Left: 1165px */
+    border-bottom: 1px solid #324950;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-container input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #324950;
+    width: 100%;
+}
+
+.search-container img {
+    width: 20px;
+    height: 20px;
+}
+
+/* НАВІГАЦІЯ (Text Menu) */
+.main-nav {
+    position: absolute;
+    width: 499px;  /* Width: 499px */
+    height: 26px;  /* Height: 26px */
+    top: 91px;     /* Top: 91px */
+    left: 1016px;  /* Left: 1016px */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Horizontal align: Right */
+    gap: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif; /* Heebo */
+    font-weight: 500;                /* 500 */
+    font-size: 20px;                 /* 18px */
+    color: #324950;                  /* #324950 */
+    line-height: 100%;               /* 100% */
+    white-space: nowrap;
+}
+
+/* ЦЕНТРАЛЬНИЙ БЛОК ГЕРОЯ */
+.hero-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title {
+    width: 804px;
+    height: 68px;
+    top: 362px;
+    left: 558px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 48px;
+    color: #735440;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.btn-read-more {
+    display: inline-block;
+    background-color: #57984C;
+    color: #FFFFFF;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* 3. CROPS NAVIGATION (Синя смуга) */
+.crops-nav {
+    height: 190px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.crops-container-full {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.crop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crop-item span {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+/* 4. VISION & MISSION SECTION */
+.about-company {
+    padding: 120px 0;
+    background-color: #F7F7F7;
+    position: relative;
+    overflow: hidden;
+}
+
+.union-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto 120px auto;
+    position: relative;
+    z-index: 2;
+}
+
+.info-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.info-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.stars-divider {
+    color: #57984C;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.info-description {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 500px;
+}
+
+.info-image img {
+    width: 540px;
+    height: 498px;
+    top: 1111px;
+    left: 975px;
+
+}
+
+/* 5. MAIN ACTIVITIES */
+.main-activities {
+    padding: 100px 0;
+    background-color: #EBEBEB;
+    text-align: center;
+    
+}
+
+.activities-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.stars-divider.centered {
+    margin: 15px auto 70px auto;
+    color: #57984C;
+    letter-spacing: 8px;
+}
+
+.activities-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.activity-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activity-image-wrapper {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.img-cotton { width: 354px; height: 261px; object-fit: contain; }
+.img-tomato { width: 232px; height: 232px; object-fit: contain; }
+.img-sunflower { width: 295px; height: 213px; object-fit: contain; }
+
+.activity-name {
+    font-family: 'Roboto Slab', serif;
+    color: #57984C;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.activity-line {
+    width: 150px;
+    height: 2px;
+    background-color: #57984C;
+    margin-bottom: 20px;
+}
+
+.activity-desc {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+/* 6. FOOTER */
+.site-footer {
+    width: 100%;
+}
+
+.footer-top {
+    background-color: #2D3F45; 
+    height: 76px; 
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icon {
+    width: 31px;
+    height: 31px;
+}
+
+.footer-bottom {
+    background-color: #324950; 
+    height: 51px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-copyright {
+    color: #FFFFFF;
+    font-size: 14px;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
